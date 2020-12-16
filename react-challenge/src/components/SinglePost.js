@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Card, CardContent, Button, Typography } from '@material-ui/core';
-import {Link} from 'react-router-dom'
+import { Card, CardContent, Typography } from '@material-ui/core';
 
 const SinglePost = props => {
     const {post} = props

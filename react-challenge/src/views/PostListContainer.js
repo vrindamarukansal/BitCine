@@ -2,7 +2,6 @@ import React,{useEffect, useState} from 'react'
 import PropTypes from 'prop-types'
 import {getPosts} from '../redux/actions'
 import {connect} from 'react-redux'
-import Pagination from '../components/Pagination'
 import PostList from '../components/PostList'
 import { Container, Button} from '@material-ui/core';
 
