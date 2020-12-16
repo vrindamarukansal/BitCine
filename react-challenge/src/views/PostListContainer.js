@@ -23,22 +23,23 @@ const PostListContainer = props => {
     else{
         return (
             <Container maxWidth='md'>
-                {posts.results.map((post,idx)=>(
-                    <PostList key={idx} post={post}/>
-                ))}
-                <div className='d-flex'>
+                <div className='d-flex mt mb'>
                     {(posts.previous)&&(
-                        <Button className='mr'
+                        <Button color='primary' className='mr'
                             onClick={()=> setCurrentPage(posts.previous)}>
                             Prev
                         </Button>
                     )}
                     {(posts.next)&&(
-                        <Button onClick={()=> setCurrentPage(posts.next)}>
+                        <Button color='primary'
+                            onClick={()=> setCurrentPage(posts.next)}>
                             Next
                         </Button>
                     )}
                 </div>
+                {posts.results.map((post,idx)=>(
+                    <PostList key={idx} post={post}/>
+                ))}
             </Container>
         ) 
     }
